@@ -6,15 +6,21 @@ class FreeShippingCalculatorTest{
         $frete = new FreeShippingCalculator();
 
         $totalValue = 80;
-        $totalValue = $frete->apply(value:$totalValue);
+        $totalValuefrete = $frete->apply(value:$totalValue);
 
-        $expectedValue = 160;
-        $this->asserEquals(exp$totalValue);
-
-        public function asserEquals($totalValue){
-            if ($fete >=)
-        };
+        $expectedValue = false;
+        $this->asserEquals($expectedValue,$totalValue);
 
     }
+        public function asserEquals($expectedValue, $actualValue){
+            if ($expectedValue !==$actualValue){
+                $message = 'Expected: ' . $expectedValue . ' but got: ' . $actualValue;
+                throw new Exception(message: $message);
+
+            }
+            echo "Test Passed \n";
+        }
+
+    
 }
 ?>
