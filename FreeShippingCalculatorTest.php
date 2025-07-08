@@ -9,7 +9,7 @@ class FreeShippingCalculatorTest{
         $totalValuefrete = $frete->apply(value:$totalValue);
 
         $expectedValue = false;
-        $this->asserEquals($expectedValue,$totalValue);
+        $this->asserEquals($expectedValue,$totalValuefrete);
 
     }
         public function asserEquals($expectedValue, $actualValue){

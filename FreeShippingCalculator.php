@@ -5,7 +5,9 @@ class FreeShippingCalculator{
 
     public function apply($value){
         if ($value >=self::Minimum_Value_FreteFree){
-            return $value;
+            return true;
+        }else{
+            return false;
         }
     }
 }
