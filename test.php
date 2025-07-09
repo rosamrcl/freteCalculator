@@ -1,5 +1,5 @@
 <?php
 include 'autoloader.php';
 $FreefreteTEST = new FreeShippingCalculatorTest();
-$FreefreteTEST ->ShouldApply_WhenValueisAboveMinimumTest();
+$FreefreteTEST ->ShouldNotApply_WhenValueIsBelowMinimumTest();
 ?>
